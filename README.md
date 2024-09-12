@@ -10,4 +10,11 @@ Além de promover o hábito da leitura, o projeto visa aprimorar habilidades de 
 - **Estilização com CSS3, incluindo conceitos de responsividade**
 - **Interatividade com JavaScript**
 
+## Criadores
+
+- João Vitor Ferrari
+- Cauê Meleck Silva
+- Pedro Reis Leite
+- Rafael Kakizuko Shimomura
+
 Sinta-se à vontade para explorar, contribuir ou sugerir melhorias!
