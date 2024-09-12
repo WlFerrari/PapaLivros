@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloque Seu Livro - PapaLivros</title>
+    <link rel="stylesheet" href="../Estilo/style_coloque_seu_livro.css">
+</head>
+<body>
+    <header>
+        <a href="javascript:history.back()" class="back-arrow">&#8592;</a>
+        <h1>Adicione um livro no PapaLivro!</h1>
+    </header>
+
+    <main>
+        <p>
+            Gostaria de adicionar seu próprio livro à nossa biblioteca virtual? Preencha o formulário abaixo com os detalhes do seu livro e envie o arquivo em formato PDF. Após a análise, seu livro poderá ser disponibilizado para nossos usuários.
+        </p>
+
+        <form action="/adicionar-livro" method="POST" enctype="multipart/form-data">
+            <label for="titulo">Título do Livro:</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="autor">Nome do Autor:</label>
+            <input type="text" id="autor" name="autor" required>
+
+            <label for="descricao">Descrição do Livro:</label>
+            <textarea id="descricao" name="descricao" rows="5" required></textarea>
+
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="">Selecione uma categoria</option>
+                <option value="literatura">Literatura</option>
+                <option value="filosofia">Filosofia</option>
+                <option value="poesia">Poesia</option>
+                <option value="biografia">Biografia</option>
+                <option value="outros">Outros</option>
+            </select>
+
+            <input type="file" id="inputFile" style="display: none;">
+            <label for="inputFile" id="labelArquivo">Clique para selecionar um arquivo</label>
+            <span id="confirmacao" style="display: none;">✔️</span>
+
+            <button type="submit">Enviar Livro</button>
+        </form>
+    </main>
+
+</body>
+<script>
+    document.getElementById('inputFile').addEventListener('change', function() {
+    const confirmationIcon = document.getElementById('confirmationIcon');
+
+
+    if (this.files.length > 0) {
+        confirmacao.style.display = 'inline'; 
+    } else {
+        confirmacao.style.display = 'none'; 
+    }
+});
+</script>
+</html>

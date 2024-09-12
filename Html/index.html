@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../Estilo/leronlineCSS-V8.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <script type="module" src="../Script/script-V8.js" ></script>
+
+    <title>Papa Livros</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href=""><img src="../Imagens/novalogo.png" width="150px"></a>
+            </div>
+            <nav class="menu">
+              
+                <ul>
+                    <li style="position: relative; display: inline-block;">
+                        <a href="" class="filtro"> <i class="bi bi-search"></i></a>
+                        <div id="filterDropdown" class="filter-dropdown">
+                                <h3>Filtrar por:</h3>
+                                <label><input type="checkbox" value="EmAlta"id="checktendencia"> Em Alta</label>
+                                <label><input type="checkbox" value="Precomenormaior"id="checknovidades"> Novidades</label>
+                                <label><input type="checkbox" value="ZaA" id="checkpoemas"> Poemas</label>
+                                <label><input type="checkbox" value="Novidades" id="checkfrases"> Frases</label>
+                                <label><input type="checkbox" value="Classicos" id="checkbrasileiros"> Escritores Brasileiros</label>
+                                <label><input type="checkbox" value="Maisvendidos" id="checkinternacionais">Escritores Estrangeiros</label>
+
+
+                        </div>
+                    </li>
+                    <li><a href="login.html"><i class="bi bi-person"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>  
+    <main>
+      <section class="principal">
+          <div class="interface">
+              <div class="flex">
+                  <div class="tendencia livros">
+                      <h2>Livros</h2>
+                  </div>
+                  <div class="imagens carrossel"  id="Novidades" >
+                      <ul>
+                            <li class="hoverdaimagem EmAlta livros"onclick="abrirpopup('Apologia de Sócrates')"><img src="https://m.media-amazon.com/images/I/91J2nXFBZIS._SL1500_.jpg" width="181px" height="233"><h3><span>★★★★★</span></h3><p>Apologia <br> de Socrates</p></li>
+                            <li class="hoverdaimagem EmAlta livros" onclick="abrirpopup('A República')"><img src="https://m.media-amazon.com/images/I/81KkahDyzgL._AC_UF1000,1000_QL80_.jpg" width="181px" height="233"><h3><span>★★★★★</span></h3><p>A República</p>
+                            <li class="hoverdaimagem Novidades livros nTend" onclick="abrirpopup('Confissões')"><img src="https://m.media-amazon.com/images/I/81wTnz5u8oL._AC_UF1000,1000_QL80_.jpg" width="181px" height="233"><h3><span>★★★★★</span></h3><p>Confissões</p>
+                            <li class="hoverdaimagem Novidades livros EmAlta" onclick="abrirpopup('Dom Casmurro')"><img src="https://http2.mlstatic.com/D_NQ_NP_693460-MLU50419145414_062022-O.webp" width="181px" height="233"><h3><span>★★★★★</span></h3><p>Dom Casmurro</p>
+                            <li class="hoverdaimagem botao livros nTend" onclick="abrirpopup('O Banquete')"><img src="https://www.baixelivros.com.br/media/2019/01/o-banquete.jpg" width="181px" height="233"><h3><span>★★★★★</span></h3><p>O Banquete</p>
+                            <li class="hoverdaimagem botao livros nTend" onclick="abrirpopup('O Cortiço')"><img src="https://storage-aws-production.publica.la/bookwire-brazil/issues/2024/07/nOgn1RzjsY7m1eGQ/eee1877e-0b68-42de-a17f-c7e1e0f1532b_cover.jpg" width="181px" height="233"><h3><span>★★★★★</span> </h3><p>O cortiço</p>
+                      </ul>
+                  </div>
+              </div>
+              <div class="tendencia poema escirotes ">
+                <h2>Poemas Tendência</h2>
+            </div>
+            <div class="imagens carrossel">
+                <ul>
+                    <li class="hoverdaimagem Novidades poema nTend" onclick="abrirpopup('O Corvo')" ><img src="https://m.media-amazon.com/images/I/91GKn4g3fML._AC_UF1000,1000_QL80_.jpg" width="181px" height="233"><h3><span>★★★★★</span></h3><p>O Corvo</p></li>
+                    <li class="hoverdaimagem EmAlta poema" onclick="abrirpopup('Poema Sujo')"><img src="https://www.bpp.pr.gov.br/sites/biblioteca/arquivos_restritos/files/migrados/Image/Candido_20/capapoemasujooriginal.jpg" width="181px" height="233"><h3><span>★★★★★</span></h3><p>Poema Sujo </p></li>
+                    <li class="hoverdaimagem EmAlta poema" onclick="abrirpopup('Canção do Exílio')"><img src="https://www.arnaldoniskier.com.br/livraria/produtos/img/classicos_cancao_do_exilio.jpg" width="181px" height="233"><h3><span>★★★★★</span></h3><p>Canção do Exílio</p></li>
+                    <li class="hoverdaimagem poema nTend" onclick="abrirpopup('Soneto de Fidelidade')"><img src="https://m.media-amazon.com/images/I/41B0t1h788L._AC_UF1000,1000_QL80_.jpg" width="181px" height="233"><h3><span>★★★★★</span></h3><p>Soneto de Fidelidade</p></li>
+                    <li class="hoverdaimagem Novidades EmAlta poema" onclick="abrirpopup('Navio Negreiro')"><img src="https://m.media-amazon.com/images/I/71NMYymG6zL._AC_UF1000,1000_QL80_.jpg" width="181px" height="233"><h3><span>★★★★★</span></h3><p>Navio Negreiro</p></li>
+                    <li class="hoverdaimagem poema nTend" onclick="abrirpopup('Morte e Vida Severina')"><img src="https://m.media-amazon.com/images/I/81znk0mmeHL._SY385_.jpg" width="181px" height="233"><h3><span>★★★★★</span></h3><p>Morte e Vida <br> Severina</p></li>
+                </ul>
+            </div>
+            <div class="tendencia escirotes brasileiros">
+                <h2>Frases de Escritores Brasileiros</h2>
+            </div>
+
+                <div class="imagens carrossel escirotes brasileiros">
+                    <ul>
+                        <li>
+                                <div class="container frases brasileiros">
+                                    <img src="https://www.coladaweb.com/wp-content/uploads/2014/12/20180502-guimaraes-rosa.jpg" width="181px" height="233" alt="Avatar" class="image" >
+                                    <div class="overlay">
+                                        <div class="text"><p>"É preciso sofrer depois de ter sofrido, <br>e amar, e mais amar, depois de ter amado."</p></div>
+                                    </div>
+                                </div>
+                                <div class="autor"><p>Guimarães <br>Rosa</p></div>
+                        </li>
+
+                        <li>
+                                <div class="container frases brasileiros">
+                                    <img src="https://www.cabodesantoagostinho.pe.leg.br/imagens/carlos-drummond-de-andrade.jpg/image_preview" width="181px" height="233" alt="Avatar" class="image" >
+                                    <div class="overlay">
+                                        <div class="text"><p>"Ser feliz sem motivo é a mais autêntica forma de felicidade."</p></div>
+                                    </div>
+                                </div>
+                                <div class="autor"><p>Carlos <br>Drummond</p></div>
+                        </li>
+
+                        <li>
+                                <div class="container frases brasileiros">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1i0dUsnOpgYdNbMPvFiLfgZQBkJK73qTSuQ&s" width="181px" height="233" alt="Avatar" class="image" >
+                                <div class="overlay">
+                                    <div class="text"><p>"Que ninguém se engane, só se consegue a simplicidade através de muito trabalho."</p></div>
+                                </div>
+                            </div>
+                            <div class="autor"><p>Clarice <br>Lispector</p></div>
+                        </li>
+                        <li>
+                                <div class="container frases brasileiros">
+                                <img src="https://www.academia.org.br/sites/default/files/academicos/fotografias/jose-de-alencar.jpg" width="181px" height="233" alt="Avatar" class="image" >
+                                <div class="overlay">
+                                    <div class="text"><p>"O amor sem esperança não tem outro refúgio senão a morte."</p></div>
+                                </div>
+                            </div>
+                            <div class="autor"><p>José de<br>Alencar</p></div>
+                        </li>
+                        <li>
+                                <div class="container frases brasileiros">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrBgCPtSMYXd7QjYlu9nSI71st89CeS9BRlbyuf4LS-p0zBJ2jA_TM2TCEM5cRW2eMpmo&usqp=CAU" width="181px" height="233" alt="Avatar" class="image" >
+                                <div class="overlay">
+                                    <div class="text"><p>"Eu me amo porque se eu não me amar quem vai me amar?"</p></div>
+                                </div>
+                            </div>
+                            <div class="autor"><p>Manuel<br>Bandeira</p></div>
+                        </li>
+                        <li>
+                                <div class="container frases brasileiros">
+                                <img src="https://editoralandmark.com.br/v2.0/wp-content/uploads/2022/02/5425c58bc632_hatoum_machado-400x519.jpg" width="181px" height="233" alt="Avatar" class="image" >
+                                <div class="overlay">
+                                    <div class="text"><p>"Cada qual sabe amar a seu modo; o modo, pouco importa; o essencial é que saiba amar."</p></div>
+                                </div>
+                            </div>
+                            <div class="autor"><p>Machado <br>de Assis</p></div>
+                        </li>
+                        
+                </ul>  
+            </div>
+
+            <div class="tendencia  escirotes internacionais">
+                <h2>Frases de Escritores Internacionais</h2>
+            </div>
+            
+                <div class="imagens carrossel escirotes internacionais">
+                    <ul>
+                        <li>
+                                <div class="container frases internacionais">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mark_Twain_by_AF_Bradley.jpg/640px-Mark_Twain_by_AF_Bradley.jpg" width="181px" height="233" alt="Avatar" class="image" >
+                                    <div class="overlay">
+                                        <div class="text"><p>"De todas as coisas que já perdi, <br> sinto mais saudade da minha cabeça."</p></div>
+                                    </div>
+                                </div>
+                                <div class="autor"><p>Mark<br>Twain</p></div>
+
+                        </li>
+
+                        <li>
+                                <div class="container frases internacionais">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQeQcplMB69aK1FFfVgbXvkpRM-h4it5SO5A&s" width="181px" height="233" alt="Avatar" class="image" >
+                                    <div class="overlay">
+                                        <div class="text"><p>"Todo mundo é capaz de dominar uma dor, exceto quem a sente."</p></div>
+                                    </div>
+                                </div>
+                                <div class="autor"><p>William <br> Shakespeare</p></div>
+                        </li>
+
+                        <li>
+                                <div class="container frases internacionais">
+                                <img src="https://cdn.britannica.com/52/75052-050-777F7105/Charles-Dickens.jpg" width="181px" height="233" alt="Avatar" class="image" >
+                                <div class="overlay">
+                                    <div class="text"><p>"A amizade da mulher para com o homem é um beco sem saída, para o qual a empurrou o engano no amor."</p></div>
+                                </div>
+                            </div>
+                            <div class="autor"><p>Charles <br> Dickens</p></div>
+                        </li>
+                        <li>
+                                <div class="container frases internacionais">
+                                <img src="https://img.peliplat.com/api/resize/v1?imagePath=std/201611/b/9/b94424a2cf3dd69b52027e383db510e1.jpg&mode=FILL&width=750&height=880&limit=false&c=1.jpg" width="181px" height="233" alt="Avatar" class="image" >
+                                <div class="overlay">
+                                    <div class="text"><p>"Viver é a coisa mais rara do mundo. A maioria das pessoas apenas existe."</p></div>
+                                </div>
+                            </div>
+                            <div class="autor"><p>Oscar <br> Wilde</p></div>
+                        </li>
+                        <li>
+                                <div class="container frases internacionais">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/George_Charles_Beresford_-_Virginia_Woolf_in_1902.jpg" width="181px" height="233" alt="Avatar" class="image" >
+                                <div class="overlay">
+                                    <div class="text"><p>"A vida é como um sonho; é o acordar que nos mata."</p></div>
+                                </div>
+                            </div>
+                            <div class="autor"><p>Virginia <br> Woolf</p></div>
+                        </li>
+                        <li>
+                                <div class="container frases internacionais">
+                                <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2017/07/18/gettyimages-2667605.jpg" width="181px" height="233" alt="Avatar" class="image" >
+                                <div class="overlay">
+                                    <div class="text"><p>"Metade do mundo não consegue compreender os prazeres da outra metade."</p></div>
+                                </div>
+                            </div>
+                            <div class="autor"><p>Jane <br> Austen</p></div>
+                        </li>
+                        
+                </ul>  
+            </div>
+          </div>
+          <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close" onclick="fecha()">&times;</span>
+                <img id="popupImage" src="" alt="Livro">
+                <h3 id="popupTitle"></h3>
+                <p id="popupCategory"></p>
+                <p id="popupSynopsis"></p>
+                <a href="#" id="popupBotao" target="_blank" class="btn">Ler agora!</a>
+
+            </div>
+        </div>
+    
+      </section>
+    
+
+  </main>
+  <footer>
+    <div class="container-footer">
+        <div class="row-footer">
+
+            <div class="footer-col">
+                <h4>Sobre a PapaLivros</h4>
+                <ul>
+                    <li><a href="quem-somos.html"> Quem somos </a></li>
+                    <li><a href="lista-de-livros.html"> Lista de Livros </a></li>
+                    <li><a href="politica-de-privacidade.html"> Política de privacidade </a></li>
+                    <li><a href="coloque-seu-livro.html"> Coloque seu livro no site </a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Obter ajuda</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="link-quebrado.html">Link Quebrado</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Outros</h4>
+                <ul>
+                    <li><a href="sugestoes.html">Sugestões</a></li>
+                    <li><a href="login.html">Conta</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Receba notificações de novos livros!</h4>
+                <div class="form-sub">
+                    <form>
+                        <input type="email" placeholder="Digite o seu e-mail" required>
+                        <button>Inscreva-se!</button>
+                    </form>
+                </div>
+                <div class="medias-socias">
+                    <a href="#"> <i class="fa fa-facebook"></i> </a>
+                    <a href="#"> <i class="fa fa-instagram"></i> </a>
+                    <a href="#"> <i class="bi bi-threads"></i> </a>
+                    <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-baixo">
+            <p>© 2024 Innov8ors</p>
+
+        </div>
+    </div>
+</footer>
+
+  <script src="../Script/script-V8.js"></script>
+</body>
+</html>

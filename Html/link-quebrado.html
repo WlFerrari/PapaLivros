@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Quebrado - PapaLivros</title>
+    <link rel="stylesheet" href="../Estilo/style_link_quebrado.css">
+</head>
+<body>
+    <header>
+        <a href="javascript:history.back()" class="back-arrow">&#8592;</a>
+        <h1>Reportar Link Quebrado</h1>
+    </header>
+    <main>
+        <section>
+            <p>Encontrou um link quebrado? Nos avise preenchendo o formulário abaixo para que possamos corrigi-lo o mais rápido possível:</p>
+            <form>
+
+                <div class="form-group">
+                    <label for="link">URL do Livro com Link Quebrado:</label>
+                    <input type="url" id="link" name="link" placeholder="Cole o link aqui" required>
+                </div>
+    
+
+                <div class="form-group">
+                    <label for="descricao">Descrição do Problema:</label>
+                    <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o problema encontrado" required></textarea>
+                </div>
+    
+
+                <div class="form-group">
+                    <label for="navegador">Navegador que você está usando:</label>
+                    <select id="navegador" name="navegador" required>
+                        <option value="chrome">Google Chrome</option>
+                        <option value="firefox">Mozilla Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Microsoft Edge</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+    
+
+                <div class="form-group">
+                    <label for="email">Seu Email (para retorno):</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+    
+
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>

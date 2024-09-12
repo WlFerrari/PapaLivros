@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestão de Mudanças</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .sugestao-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 650px;
+        }
+        h2 {
+            text-align: center;
+            color: #288eb9;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], textarea {
+            width: 97%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #288eb9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1f6c8c;
+        }
+
+
+    .back-arrow {
+ 
+        left: 40px; 
+        font-size: 30px;
+        color: #288eb9;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    header h2 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="sugestao-box">
+        <a href="javascript:history.back()" class="back-arrow">&#8592;</a>
+        <h2>Sugestões</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            
+            <label for="sugestao">Sugestão:</label>
+            <textarea id="sugestao" name="sugestao" placeholder="Escreva sua sugestão aqui..."></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
