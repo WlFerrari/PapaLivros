@@ -1,4 +1,4 @@
-# Eye Soul - Plataforma de Leitura Online
+# Papa Livros - Plataforma de Leitura Online
 
 Este projeto foi desenvolvido como parte das aulas de **Desenvolvimento Web: Introdução ao HTML, CSS e JavaScript**, com o objetivo de criar uma plataforma intuitiva e acessível para a leitura de livros, poemas e frases de escritores renomados.
 
